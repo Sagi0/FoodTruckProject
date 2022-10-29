@@ -42,6 +42,16 @@ public class FoodTruckApp {
 			if (truckName.equalsIgnoreCase("quit")) {
 				FoodTruck[] earlyExitArr = Arrays.copyOf(foodTrucks, i);
 				return earlyExitArr;
+			} else {
+				
+				System.out.println("Enter the type of food carried on truck: ");
+				foodType = scanner.nextLine();
+				
+				do {
+					System.out.println("Enter rating (0-5):");
+					rating = scanner.nextDouble();
+				}
+				
 			}
 			
 		}
