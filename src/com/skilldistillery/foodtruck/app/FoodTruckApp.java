@@ -9,5 +9,9 @@ public class FoodTruckApp {
 		
 		
 	}
+	
+	public void startApp(Scanner scanner, FoodTruckApp foodTruckApp) {
+		
+	}
 
 }
