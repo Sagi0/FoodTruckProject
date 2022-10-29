@@ -95,7 +95,23 @@ public class FoodTruckApp {
 		System.out.println();
 		
 		switch (selection) {
-		case 1; truckList(trucks);
+		case 1: truckList(trucks);
+		
+			break;
+			
+		case 2: ratingAverage(trucks);
+		
+			break;
+			
+		case 3: bestTruck(trucks);
+		
+			break;
+			
+		case 4:
+			System.out.println("         |Signing Off|         ");
+			System.out.println("_______________________________");
+			System.out.println("*******Leaving Metaverse*******");
+			return false;
 		}
 		return true;
 	}
