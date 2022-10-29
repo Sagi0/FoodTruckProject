@@ -59,6 +59,10 @@ public class FoodTruck {
 		uniqueTruckId+=19;
 	}
 	
-	
+	public String toString() {
+		StringBuilder builder = new StringBuilder();
+		builder.append("Food Truck Name: ").append(truckName).append(", Food Type: ").append(foodType).append(",Rating: ").append(rating).append(", and Truck ID: ").append(truckId).append(".");
+		return builder.toString();
+	}
 
 }
