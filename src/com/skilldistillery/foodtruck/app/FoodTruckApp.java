@@ -65,6 +65,21 @@ public class FoodTruckApp {
 		return foodTrucks;
 	}
 	
+	public void printMenu() {
+		System.out.println();
+		System.out.println("|*****************************************|");
+		System.out.println("|-----------------------------------------|");
+		System.out.println("| *         Food Truck MetaMenu:        * |");
+		System.out.println("|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|");
+		System.out.println("|1. List all stored food trucks.          |");
+		System.out.println("|2. See the average rating of food trucks.|");
+		System.out.println("|3. Display the highest-rated food truck. |");
+		System.out.println("|4. Quit the program.                     |");
+		System.out.println("|_________________________________________|");
+		System.out.println("|*****************************************|");
+		System.out.println();
+	}
+	
 	
 
 }
