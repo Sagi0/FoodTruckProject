@@ -115,5 +115,16 @@ public class FoodTruckApp {
 		}
 		return true;
 	}
+	
+	public void truckList(FoodTruck[] trucks) {
+		
+		System.out.println("All food trucks parked in the Metaverse:");
+		
+		for (int i = 0; i < trucks.length; i++) {
+			System.out.println(truck[i].toString());
+		}
+	}
+	
+	
 
 }
