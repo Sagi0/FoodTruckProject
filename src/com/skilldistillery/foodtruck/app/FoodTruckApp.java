@@ -121,7 +121,7 @@ public class FoodTruckApp {
 		System.out.println("All food trucks parked in the Metaverse:");
 		
 		for (int i = 0; i < trucks.length; i++) {
-			System.out.println(truck[i].toString());
+			System.out.println(trucks[i].toString());
 		}
 	}
 	
