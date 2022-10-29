@@ -30,6 +30,12 @@ public class FoodTruckApp {
 
 	public FoodTruck[] inputFoodTruck(Scanner scanner) {
 		
+		FoodTruck[] foodTrucks = new FoodTruck[5];
+		String foodType = "";
+		double rating = 0;
+		
+		
+		
 	}
 	
 }
