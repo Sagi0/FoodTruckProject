@@ -23,10 +23,12 @@ public class FoodTruckApp {
 		System.out.println("_______________________________________________________________");
 		System.out.println("|*___________________|Food Truck Metaverse|__________________*|");
 		System.out.println("---------------------------------------------------------------");
+		FoodTruck[] trucks = foodTruckApp.inputFoodTruck(scanner);
 		
 
 	}
 
+	public FoodTruck[] inputFoodTruck(Scanner scanner) {
 		
 	}
 	
