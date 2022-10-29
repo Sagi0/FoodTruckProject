@@ -12,7 +12,10 @@ public class FoodTruck {
 	}
 	
 	public FoodTruck(String truckName, String foodType, double rating, int truckId) {
-		
+		this.truckName = truckName;
+		this.foodType = foodType;
+		this.rating = rating;
+		this.truckId = truckId;
 	}
 
 }
