@@ -1,8 +1,9 @@
 package com.skilldistillery.foodtruck.app;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
-import practice.FoodTruck;
+import com.skilldistillery.foodtruck.entities.FoodTruck;
 
 public class FoodTruckApp {
 	
@@ -38,7 +39,10 @@ public class FoodTruckApp {
 			System.out.println("Enter a food truck's name or \"quit\" to go to Menu:");
 			String truckName = scanner.nextLine();
 
-			
+			if (truckName.equalsIgnoreCase("quit")) {
+				FoodTruck[] earlyExitArr = Arrays.copyOf(foodTrucks, i);
+				return earlyExitArr;
+			}
 			
 		}
 		
