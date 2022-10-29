@@ -54,11 +54,17 @@ public class FoodTruckApp {
 				} while (rating > 5 || rating < 0);
 				scanner.nextLine();
 				
-				
+				foodTrucks[i] = new FoodTruck();
+				foodTrucks[i].setTruckName(truckName);
+				foodTrucks[i].setFoodType(foodType);
+				foodTrucks[i].setRating(rating);
+				foodTrucks[i].setTruckId(i);
 
 			}
 		}
 		return foodTrucks;
 	}
+	
+	
 
 }
