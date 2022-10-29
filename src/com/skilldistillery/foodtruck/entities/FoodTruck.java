@@ -7,6 +7,12 @@ public class FoodTruck {
 	private int truckId;
 	private static int nextTruckId = 1000;
 	
+	public FoodTruck() {
+		
+	}
 	
+	public FoodTruck(String truckName, String foodType, double rating, int truckId) {
+		
+	}
 
 }
