@@ -30,11 +30,17 @@ public class FoodTruckApp {
 
 	public FoodTruck[] inputFoodTruck(Scanner scanner) {
 		
-		FoodTruck[] foodTrucks = new FoodTruck[5];
+		com.skilldistillery.foodtruck.entities.FoodTruck[] foodTrucks = new FoodTruck[5];
 		String foodType = "";
 		double rating = 0;
 		
-		
+		for (int i = 0; i <= foodTrucks.length; i++) {
+			System.out.println("Enter a food truck's name or \"quit\" to go to Menu:");
+			String truckName = scanner.nextLine();
+
+			
+			
+		}
 		
 	}
 	
