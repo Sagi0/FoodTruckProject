@@ -53,7 +53,7 @@ public class FoodTruckApp {
 					}
 				} while (rating > 5 || rating < 0);
 				scanner.nextLine();
-				
+
 				foodTrucks[i] = new FoodTruck();
 				foodTrucks[i].setTruckName(truckName);
 				foodTrucks[i].setFoodType(foodType);
@@ -64,7 +64,7 @@ public class FoodTruckApp {
 		}
 		return foodTrucks;
 	}
-	
+
 	public void printMenu() {
 		System.out.println();
 		System.out.println("|*****************************************|");
@@ -79,34 +79,37 @@ public class FoodTruckApp {
 		System.out.println("|*****************************************|");
 		System.out.println();
 	}
-	
+
 	public boolean chooseFromMenu(Scanner scanner, FoodTruck[] trucks) {
 		int selection = 0;
-		
+
 		do {
 			System.out.println("Enter your selection (1-4): ");
 			selection = scanner.nextInt();
-			
+
 			if (selection > 4 || selection < 1) {
 				System.out.println("Invalid Entry! Selection out of range. Please Try Again.");
 			}
-			
+
 		} while (selection > 4 || selection < 1);
 		System.out.println();
-		
+
 		switch (selection) {
-		case 1: truckList(trucks);
-		
+		case 1:
+			truckList(trucks);
+
 			break;
-			
-		case 2: ratingAverage(trucks);
-		
+
+		case 2:
+			ratingAverage(trucks);
+
 			break;
-			
-		case 3: bestTruck(trucks);
-		
+
+		case 3:
+			bestTruck(trucks);
+
 			break;
-			
+
 		case 4:
 			System.out.println("         |Signing Off|         ");
 			System.out.println("_______________________________");
@@ -115,14 +118,29 @@ public class FoodTruckApp {
 		}
 		return true;
 	}
-	
+
 	public void truckList(FoodTruck[] trucks) {
-		
+
 		System.out.println("All food trucks parked in the Metaverse:");
-		
+
 		for (int i = 0; i < trucks.length; i++) {
 			System.out.println(trucks[i].toString());
 		}
+	}
+
+	public void ratingAverage(FoodTruck[] trucks) {
+
+		double sumOfRatings = 0;
+
+		for (int i = 0; i < trucks.length; i++) {
+			sumOfRatings += trucks[i].getRating();
+		}
+
+		double average = sumOfRatings / trucks.length * 1.0;
+
+		double roundedAverage = (Math.round((average) * 100.0)) / 100.0;
+
+		System.out.println("Average food truck rating of stored food trucks: ");
 	}
 	
 	
