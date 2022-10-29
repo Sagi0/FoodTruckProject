@@ -80,6 +80,24 @@ public class FoodTruckApp {
 		System.out.println();
 	}
 	
-	
+	public boolean chooseFromMenu(Scanner scanner, FoodTruck[] trucks) {
+		int selection = 0;
+		
+		do {
+			System.out.println("Enter your selection (1-4): ");
+			selection = scanner.nextInt();
+			
+			if (selection > 4 || selection < 1) {
+				System.out.println("Invalid Entry! Selection out of range. Please Try Again.");
+			}
+			
+		} while (selection > 4 || selection < 1);
+		System.out.println();
+		
+		switch (selection) {
+		case 1; truckList(trucks);
+		}
+		return true;
+	}
 
 }
