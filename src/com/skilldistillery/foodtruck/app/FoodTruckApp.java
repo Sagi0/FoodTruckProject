@@ -2,6 +2,8 @@ package com.skilldistillery.foodtruck.app;
 
 import java.util.Scanner;
 
+import practice.FoodTruck;
+
 public class FoodTruckApp {
 	
 	public static void main(String[] args) {
@@ -17,7 +19,15 @@ public class FoodTruckApp {
 	}
 	
 	public void startApp(Scanner scanner, FoodTruckApp foodTruckApp) {
+		System.out.println("                       ...Starting...                          ");
+		System.out.println("_______________________________________________________________");
+		System.out.println("|*___________________|Food Truck Metaverse|__________________*|");
+		System.out.println("---------------------------------------------------------------");
 		
+
 	}
 
+		
+	}
+	
 }
