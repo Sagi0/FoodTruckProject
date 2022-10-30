@@ -23,6 +23,9 @@ public class FoodTruckApp {
 		System.out.println("_______________________________________________________________");
 		System.out.println("|*___________________|Food Truck Metaverse|__________________*|");
 		System.out.println("---------------------------------------------------------------");
+		System.out.println();
+		System.out.println();
+		System.out.println("** Please enter up to Five Food Trucks **");
 		FoodTruck[] trucks = foodTruckApp.inputFoodTruck(scanner);
 
 	}
@@ -142,7 +145,36 @@ public class FoodTruckApp {
 
 		System.out.println("Average food truck rating of stored food trucks: ");
 	}
-	
-	
+
+	public void bestTuck(FoodTruck[] trucks) {
+
+		double highRating = trucks[0].getRating();
+
+		for (int i = 0; i < trucks.length; i++) {
+			if (trucks[i].getRating() > highRating) {
+				highRating = trucks[i].getRatings();
+			}
+		}
+
+		int truckTies = 0;
+
+		for (int i = 0; i < trucks.length; i++) {
+			if (highRating == trucks[i].getRating()) {
+				truckTies++;
+			}
+		}
+
+		if (truckTies > 1) {
+			System.out.println("There are " + truckTies + " food trucks tied for the Best Truck");
+		} else {
+			System.out.println("The Best Food Truck in the verse is:");
+		}
+
+		for (int i = 0; i < trucks.length; i++) {
+			if (highRating == trucks[i].getRating()) {
+				System.out.println(trucks[i].toString());
+			}
+		}
+	}
 
 }
