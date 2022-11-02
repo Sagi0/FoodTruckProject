@@ -26,7 +26,14 @@ public class FoodTruckApp {
 		System.out.println();
 		System.out.println();
 		System.out.println("** Please enter up to Five Food Trucks **");
+		System.out.println();
 		FoodTruck[] trucks = foodTruckApp.inputFoodTruck(scanner);
+		
+		boolean runMenu = true;
+		while (runMenu) {
+			foodTruckApp.printMenu();
+			runMenu = foodTruckApp.chooseFromMenu(scanner, trucks);
+		}
 
 	}
 
@@ -143,16 +150,16 @@ public class FoodTruckApp {
 
 		double roundedAverage = (Math.round((average) * 100.0)) / 100.0;
 
-		System.out.println("Average food truck rating of stored food trucks: ");
+		System.out.println("Average food truck rating of stored food trucks: " + roundedAverage);
 	}
 
-	public void bestTuck(FoodTruck[] trucks) {
+	public void bestTruck(FoodTruck[] trucks) {
 
 		double highRating = trucks[0].getRating();
 
 		for (int i = 0; i < trucks.length; i++) {
 			if (trucks[i].getRating() > highRating) {
-				highRating = trucks[i].getRatings();
+				highRating = trucks[i].getRating();
 			}
 		}
 
